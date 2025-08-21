@@ -1,0 +1,21 @@
+---
+title: "Week2 Map Project"
+author: "Tommaso Curcio"
+date: "21/08/2025"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+
+```{r }
+library(leaflet)
+mymap<- leaflet() %>% addTiles() %>% setView(lng = 12.48890223981122, lat = 41.89777138894118, zoom = 15) %>% addMarkers(lng = 12.48890223981122, lat = 41.89777138894118,popup="<div>Bank of Italy</div>")
+mymap
+```
+
+
+
